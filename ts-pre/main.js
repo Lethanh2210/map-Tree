@@ -8,3 +8,4 @@ tree.root = tree.insert(tree.root, 3);
 tree.root = tree.insert(tree.root, 1);
 console.log(tree.root);
 tree.preorder();
+tree.postOrder(tree.root);

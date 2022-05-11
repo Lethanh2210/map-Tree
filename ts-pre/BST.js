@@ -48,6 +48,13 @@ var BST = /** @class */ (function () {
         this._preorder(root.left);
         this._preorder(root.right);
     };
+    BST.prototype.postOrder = function (root) {
+        if (root == null)
+            return;
+        this.postOrder(root.left);
+        this.postOrder(root.right);
+        console.log(root.value + '');
+    };
     return BST;
 }());
 exports.BST = BST;

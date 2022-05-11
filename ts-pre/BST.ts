@@ -45,4 +45,11 @@ export class BST {
         this._preorder(root.left);
         this._preorder(root.right);
     }
+
+    postOrder(root: TreeNode):void{
+        if(root == null)return;
+        this.postOrder(root.left);
+        this.postOrder(root.right);
+        console.log(root.value + '');
+    }
 }
