@@ -115,8 +115,8 @@ var BST = /** @class */ (function (_super) {
     BST.prototype._inorder = function (root) {
         if (root == null)
             return;
-        this._inorder(root.left);
         console.log(root.value + " ");
+        this._inorder(root.left);
         this._inorder(root.right);
     };
     return BST;

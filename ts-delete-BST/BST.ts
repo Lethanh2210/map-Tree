@@ -46,7 +46,6 @@ export class BST extends AbstractTree{
                     }else{
                         temp = temp.left;
                     }
-
                 }
             }
             return root;
@@ -100,8 +99,9 @@ export class BST extends AbstractTree{
 
     _inorder(root: TreeNode): void {
         if (root == null) return;
-        this._inorder(root.left);
         console.log(root.value + " ");
+        this._inorder(root.left);
+
         this._inorder(root.right);
     }
 }
